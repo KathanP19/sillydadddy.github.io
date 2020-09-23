@@ -78,15 +78,18 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-
-    
+#collection
+collections:
+  infosecama:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
   # Post defaults
   - scope:
       path: "_posts"
-      type: posts
+      type: infosecama
     values:
       layout: post
       comments: true
